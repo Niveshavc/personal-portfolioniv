@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Nivesh R</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f0f0f0;
+            color: #333;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background: linear-gradient(135deg, #4A00E0, #8E2DE2);
+            color: white;
+            padding: 1.5rem 2rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 1rem;
+        }
+
+        section {
+            background: white;
+            margin-bottom: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        section h2 {
+            background: #4A00E0;
+            color: white;
+            padding: 0.75rem 1rem;
+            font-size: 1.5rem;
+        }
+
+        section .content {
+            padding: 1.5rem;
+        }
+
+        .skills, .projects, .experience {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .skills div, .projects div, .experience div {
+            background: #f7f7f7;
+            padding: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .skills div i {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            color: #4A00E0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #333;
+            color: white;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            margin-bottom: 0.5rem;
+        }
+
+        footer a {
+            color: #4A00E0;
+            text-decoration: none;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .contact ul {
+            list-style: none;
+        }
+
+        .contact li {
+            margin-bottom: 0.5rem;
+        }
+
+        .profile-photo {
+            max-width: 200px;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hi, I'm Nivesh R</h1>
+        <p>Aspiring Python Developer | Technology Enthusiast</p>
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- About Me Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="content">
+                <img src="5ca1e02c-d5e4-44b3-9bca-3896eb4fd66c.jpg" alt="Nivesh R" class="profile-photo">
+                <p>As a final-year student with a passion for technology and problem-solving, I am on a journey to become a proficient Python developer. My academic and project experiences have equipped me with a deep understanding of both front-end and back-end development, enabling me to build comprehensive and scalable applications.</p>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education">
+            <h2>Education</h2>
+            <div class="content">
+                <p><strong>B.E. in Electronics and Communication Engineering</strong> (2021-2025)<br>AVC College of Engineering, Mayiladuthurai</p>
+                <p><strong>Higher Secondary Education</strong> (2017-2021)<br>Govt. Boys Higher Secondary School, Nannilam, Thiruvarur</p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="content skills">
+                <div><i class="fas fa-code"></i><p>Python Programming</p></div>
+                <div><i class="fas fa-project-diagram"></i><p>Git & GitHub</p></div>
+                <div><i class="fas fa-laptop-code"></i><p>HTML & CSS</p></div>
+                <div><i class="fas fa-brain"></i><p>Fast Learner</p></div>
+                <div><i class="fas fa-microchip"></i><p>Embedded Systems</p></div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="content projects">
+                <div>
+                    <h3>Garbage Segregator System</h3>
+                    <p>Developed an IoT-based system to automate waste segregation and monitor bin levels. It classifies waste into recyclable and non-recyclable categories, sending real-time alerts when bins are full, improving waste management efficiency.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="content experience">
+                <div>
+                    <h3>Python Internship</h3>
+                    <p>Completed a 30-day Python internship at GK Tech.</p>
+                </div>
+                <div>
+                    <h3>Web Development Internship</h3>
+                    <p>Completed a 30-day internship at Prodigy InfoTech.</p>
+                </div>
+                <div>
+                    <h3>Embedded Systems Training</h3>
+                    <p>Completed one-week training in industrial-based embedded systems with AI and IoT at NSIC, Chennai.</p>
+                </div>
+                <div>
+                    <h3>FM Broadcast Training</h3>
+                    <p>Completed a one-week training in FM broadcast equipment at India's Public Services Broadcaster, Karaikal.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="content contact">
+                <ul>
+                    <li><strong>Address:</strong> South Street, Vikkirapandiyam, Thiruvarur 610107</li>
+                    <li><strong>Phone:</strong> +91 9345776450</li>
+                    <li><strong>Email:</strong> nivesheceece@gmail.com</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2024 Nivesh R | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
